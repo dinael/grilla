@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+/*===  $$ @font-face // Google fonts  ====*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+/*==========  $$Etiquetas  ==========*/
+html{
+	font-size:16px;
+}
+body {
+	font-size:1em; /*Fallback*/	
+	font-size:1rem;
+	font-family: 'Open Sans', sans-serif;
+	/*	font-family: Arial, Helvetica, sans-serif;*/
+}
+main{/*Influye en la estructura*/
+	display:block;
+	width:auto;
+	height:auto;
+	min-height:100%;
+	padding-bottom:5em;/*la misma altura del footer*/
+}
+main:after{/*Influye en la estructura*/
+	width: 100%;
+	height: 5em;/*la misma altura del footer*/
+	display: block;
+	clear: both;
+	overflow:hidden;
+}
+h1 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+p {
+}
+i {
+}
+b {
+}
+strong {
+	font-weight:bold;
+}
+em{
+}
+small {
+	font-size:80%;
+}
+big {
+	font-size:120%;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+a {
+}
+a:link {
+	/*text-decoration:underline;*/
+}
+a:hover {
+	/*text-decoration:underline;*/	
+}
+a:active {
+}
+a:visited {
+}
+a:visited:hover {
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+aside{
+	overflow:hidden;
+	display:block;
+}
+/*==========  $$Wrapper  ==========*/
+.wrapper{
+/*Mantener la relación de con la altura del Footer*/
+	padding-bottom:-5em;
+}
+.wrapper:after{
+	height: 5em;
+}
+/*=========  $$Form  =========*/
+/*=========  Validación  ========*/
+input:required:focus:invalid {
+	background-color: red; 
+	border: 1px solid black;
+}
+input:required:focus:valid {
+	background-color: green; 
+	border: 1px solid black;
+}
+/*=========  $$Estilos utilitarios  ========*/
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.clear-left {
+	clear: left;
+}
+.clear-right {
+	clear: right;
+}
+.space {
+	height:1em;
+	clear:both;
+}
+.img-responsive{
+	width:100%;
+	height:auto;
+}
+.invisible {
+    visibility: hidden;
+}
+.not-desktop{
+	display:none;
+	/*los estilos not-tablet y no-mobile se definen en los media queries*/
+}
+.only-desktop{
+	display: block;
+}
+.only-tablet, .only-mobile{
+	display:none; 
+}
+.fullheight{
+	width: 100%;
+	height:450px; /*Modificar*/
+}
+#go-top{
+	display:none;
+	text-align: right;
+	right:1em;
+	position: fixed;
+	bottom: 4em;
+}
+#go-top a{
+	display:inline-block;
+	width: 5em;
+	color:white;
+	padding:1em;
+	font-size:0.8em;
+	background:grey;
+}
+#go-top a:hover{
+	background:#0d091a;
+}
+/*=========  $$Layout  ========*/
+/*=========  $$Header  ========*/
+header{
+}
+/*=========  $$Menu  ========*/
+nav{
+}
+/*=========  $$Contenido  ========*/
+
+/*=========  $$Footer  ========*/
+footer{
+	clear:both;
+	display:block;
+	overflow:hidden;
+	bottom:0;
+	height:5em;
+	margin: -5em auto 0;
+}
+/*=========  $$Media queries & Breakpoints  ========*/	
+  @media only screen and (min-width: 1200px) {
+}
+/*=====  Tablet ====*/
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+	}
+}
+ @media only screen and (max-width: 820px) {
+}
+/*=====  Mobile landscape====*/
+ @media only screen and (min-width: 581px) and (max-width: 767px) {
+}
+ @media only screen and (max-width: 767px) {
+
+}
+/*=====  $$Mobile portrait  ====*/
+ @media only screen and (max-width: 580px) {
+}	
+/*=====  Display only-tablet // only-mobile //  only-desktop  ===== */
+ @media only screen and (min-width: 768px) and (max-width: 979px) {
+	.only-tablet{
+		display:block;
+	}
+	.only-desktop{
+		display:none !important;
+	}
+	.not-tablet{
+		display:none;
+	}
+}
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+	 .only-mobile{
+		 display:block;
+	 }
+	 .only-desktop{
+		display:none !important;
+	}
+	.not-mobile{
+		display:none;
+	}
+}
+ @media only screen and (min-width: 80px) and (max-width: 479px) {
+	 .only-mobile{
+		 display: block;
+	 }
+	.only-desktop{
+		display:none !important;
+	}
+	.not-mobile{
+		display:none;
+	}
+}
+/*=========  $$ Breakpoints  ========*/	
+  @media only screen and (min-width: 1200px) {
+
+}
+  @media only screen and (max-width: 1200px) and (min-width: 980px) {
+
+}
+ @media only screen and (min-width: 581px) and (max-width: 979px) {
+	 
+ }
