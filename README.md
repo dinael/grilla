@@ -1,4 +1,4 @@
-# grilla
+# GrillaCSS
 
 SIMPLE Y DIRECTO
 Un framework de maquetación ligero
